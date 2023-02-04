@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #F8F4EA;
+    width: 100%;
+    position: fixed; /* will make the header always on display no matter where you scroll*/
+    z-index: 999; /*priority to header always, nothing overlaps above it,,, imagine z as being height out of screen*/
+    display: flex;
+    justify-content: space-between; /*Adds space between parent and child elements*/
+    align-items: center;
+    padding: 10px 200px; /*first valu: top and bottom,,, second valu: right and left */
+}
+
+.Logo{
+
+    text-decoration: none; /*removes underline of hyperlink*/
+    color: #579BB1;
+    text-transform: uppercase; /*capsLock*/
+    font-weight: 700;
+    font-size: 1.8em; /*by default will equal 1.8 * 16px   */
+
+}
+
+.Navigation a{  /*you must add 'a' in front of the class name to identify the items*/
+    
+    text-decoration: none;
+    color: #579BB1;
+    font-weight: 500;
+    font-size: 1.1em ;
+    padding-left: 25px;
+
+}
+
+.Navigation a:hover{
+    color: #00425A;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.firstsec{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /*can only be done when activating flex*/
+    background: url(media/mybg.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.firstsec h2{
+    color: #F8F4EA;
+    font-size: 1.4em;
+    font-weight: 500;
+
+}
+
+.firstsec h2 span{
+    color: #F8F4EA;
+    font-weight: 700;
+    font-size: 2.7em;
+}
+
+.firstsec h3{
+    color: #E1D7C6;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.button{
+    color: #F8F4EA;
+    text-decoration: none;
+    background-color: #579BB1;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block; /*to allow for padding and margin*/
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px; 
+    transition: 0.6s ease;
+    
+}
+
+.button:hover{
+    background-color: #00425A;
+    transform: scale(1.1);
+
+}
+
+.social-media a{
+    color: #F8F4EA;
+    font-size: 1.7em;
+    padding-right: 30px;
+    transition: 0.6s ease;
+}
+
+.social-media a:hover{
+    color: #3d7a90;
+    transform: scale(2);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #579BB1;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /*makes card side to side*/
+    flex-wrap: wrap;/*no down-sizing for card to accomodate for width*/
+}
+
+.card{
+    
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(20 20 20 / 30%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.6s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color:#579BB1;
+    font-size: 7em;
+    text-align: center;
+}
+
+
+.info{
+    text-align: center;
+
+}
+
+.info h3{
+    color: #00425A;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects{
+    background-color: #e1d8c3;
+
+}
+
+.projects .content{
+    margin-top: 30px;
+
+}
+
+.pcard{
+    background-color: #fff;
+    border: 1px solid #3d7a90;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.6s ease;
+}
+
+.pcard:hover{
+    transform: scale(1.1); 
+}
+.pcard .thumb{
+    transition: 0.6s  ease;
+}
+.pcard:hover .thumb {
+    opacity: 0.8; 
+}
+.thumb img{
+    width: 100%;
+    
+}
+
+.pinfo{
+    padding: 1em;
+
+}
+
+.category{
+    font-size: 0.8em;
+    color: #000;
+
+}
